@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Ndeye Madeleine Dia : projets en IoT, cybersécurité, programmation C, SQL et entrepreneuriat. Étudiante L2 GLAR à Dakar.">
+    <meta name="author" content="Ndeye Madeleine Dia">
+    <title>Mes Projets – Madeleine.dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header>
+        <nav class="navbar" aria-label="Navigation principale">
+            <a href="index.html" class="logo" aria-label="Retour à l'accueil - Madeleine.dev">Madeleine.dev</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="projets.html" aria-current="page">Projets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="projects">
+            <h1>Mes Projets</h1>
+            <p class="projects-intro">Sélection de réalisations académiques démontrant mes compétences en développement, IoT, cybersécurité et algorithmique.</p>
+            <div class="search-wrapper">
+                <label for="searchProject" class="sr-only">Rechercher un projet</label>
+                <input type="search" id="searchProject" name="searchProject" placeholder="Rechercher par technologie, type..." class="search">
+            </div>
+            <div class="projects-container">
+                <article class="project-card">
+                    <img src="poubelle-iot.jpeg" alt="Prototype de poubelle intelligente avec ESP32, capteur ultrason et écran LCD">
+                    <div class="project-content">
+                        <h2>Poubelle Intelligente Connectée</h2>
+                        <div class="project-meta">
+                            <span class="tag group">Projet de groupe</span>
+                            <span class="tag">Systèmes Embarqués</span>
+                            <time datetime="2026-02">Février 2026</time>
+                        </div>
+                        <p class="project-desc">Système IoT automatisant l’ouverture d’une poubelle via capteur ultrason à 5cm. Affichage d’état sur LCD I2C avec LED témoin et remontée des données température/humidité sur interface web hébergée par l’ESP32.</p>
+                        <p class="project-role"><strong>Mon rôle :</strong> Développement du code C++ Arduino, intégration du serveur web embarqué et tests des capteurs ultrason, DHT11 et LCD.</p>
+                        <div class="project-tech">
+                            <strong>Technologies :</strong>
+                            <span class="tech-badge">C++ Arduino</span>
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">DHT11</span>
+                            <span class="tech-badge">LCD I2C</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="repertoire-c.jpeg" alt="Interface console de l'application de gestion de répertoire téléphonique en C">
+                    <div class="project-content">
+                        <h2>Gestion de Répertoire Téléphonique</h2>
+                        <div class="project-meta">
+                            <span class="tag group">Projet de groupe</span>
+                            <span class="tag">Algorithmique</span>
+                            <time datetime="2026">2026</time>
+                        </div>
+                        <p class="project-desc">Application console en langage C avec base de données SQL pour gérer un carnet d’adresses. CRUD complet : création, lecture, modification, suppression et recherche de contacts via menu interactif.</p>
+                        <p class="project-role"><strong>Mon rôle :</strong> Conception de la structure CONTACT, implémentation des fonctions Saisie_Contact(), Search_Contact() et gestion des requêtes SQL pour la persistance des données.</p>
+                        <div class="project-tech">
+                            <strong>Technologies :</strong>
+                            <span class="tech-badge">Langage C</span>
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Structures</span>
+                            <span class="tech-badge">Pointeurs</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="aquascan.jpeg" alt="Schéma conceptuel d'un kiosque intelligent de filtration d'eau AQUASCAN">
+                    <div class="project-content">
+                        <h2>AQUASCAN - Business Plan</h2>
+                        <div class="project-meta">
+                            <span class="tag group">Projet de groupe</span>
+                            <span class="tag future">Projet conceptuel</span>
+                            <span class="tag">Entrepreneuriat</span>
+                            <time datetime="2026">2026</time>
+                        </div>
+                        <p class="project-desc">Étude et conception d’un service de distribution d’eau potable via kiosques IoT connectés. Travail réalisé dans le cadre du cours d’Entrepreneuriat : étude de marché, modèle économique et spécifications techniques pour zones à accès limité.</p>
+                        <p class="project-role"><strong>Mon rôle :</strong> Participation à l’étude de marché, définition des fonctionnalités techniques du kiosque IoT et élaboration du modèle économique.</p>
+                        <div class="project-tech">
+                            <strong>Compétences mobilisées :</strong>
+                            <span class="tech-badge">Business Model</span>
+                            <span class="tech-badge">Étude de marché</span>
+                            <span class="tech-badge">Cahier des charges</span>
+                            <span class="tech-badge">IoT</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="openssl.jpeg" alt="Terminal Linux montrant la génération de certificats X.509 avec OpenSSL">
+                    <div class="project-content">
+                        <h2>Sécurisation Web avec OpenSSL</h2>
+                        <div class="project-meta">
+                            <span class="tag solo">Projet individuel</span>
+                            <span class="tag">Sécurité Avancée</span>
+                            <time datetime="2026-02">Février 2026</time>
+                        </div>
+                        <p class="project-desc">Mise en œuvre des mécanismes de cryptographie avec OpenSSL sous Linux. Chiffrement symétrique AES/3DES, asymétrique RSA 2048 bits, hachage SHA256, signature numérique et création de certificats X.509 auto-signés pour sécuriser Apache2 en HTTPS.</p>
+                        <div class="project-tech">
+                            <strong>Technologies :</strong>
+                            <span class="tech-badge">OpenSSL</span>
+                            <span class="tech-badge">Linux CLI</span>
+                            <span class="tech-badge">AES/RSA</span>
+                            <span class="tech-badge">SHA256</span>
+                            <span class="tech-badge">X.509</span>
+                            <span class="tech-badge">Apache2</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="methodes-numeriques.jpeg" alt="Graphique de convergence des méthodes de la sécante et fausse position en C">
+                    <div class="project-content">
+                        <h2>Résolution d’Équations Non Linéaires</h2>
+                        <div class="project-meta">
+                            <span class="tag solo">Projet individuel</span>
+                            <span class="tag">Calcul Numérique</span>
+                            <time datetime="2026">2026</time>
+                        </div>
+                        <p class="project-desc">Implémentation en langage C sur Code::Blocks des algorithmes de la sécante et de la fausse position pour la recherche de racines. Gestion des critères d’arrêt, calcul de l’erreur et comparaison des vitesses de convergence.</p>
+                        <div class="project-tech">
+                            <strong>Technologies :</strong>
+                            <span class="tech-badge">Langage C</span>
+                            <span class="tech-badge">Code::Blocks</span>
+                            <span class="tech-badge">Algorithmique</span>
+                            <span class="tech-badge">Analyse Numérique</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ndeye Madeleine Dia - L2 GLAR</p>
+        <p>Portfolio réalisé avec HTML et CSS</p>
+        <ul class="socials" aria-label="Liens professionnels">
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Ndeye Madeleine Dia pour projets, stages ou collaborations en développement web.">
+    <meta name="author" content="Ndeye Madeleine Dia">
+    <title>Contact – Madeleine.dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header>
+        <nav class="navbar" aria-label="Navigation principale">
+            <a href="index.html" class="logo" aria-label="Retour à l'accueil - Madeleine.dev">Madeleine.dev</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="contact">
+            <h1>Contact</h1>
+            <p>Disponible pour projets, stages ou collaborations.</p>
+            <form action="#" method="POST" class="form-contact">
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex: Lamine Samb" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: contact@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Décrivez votre demande..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer le message</button>
+            </form>
+        </section>
+        <section class="project-request">
+            <h2>Demande de projet</h2>
+            <p>Décrivez votre besoin, je vous répondrai sous 48h.</p>
+            <form action="#" method="POST" class="form-project">
+                <div class="form-group">
+                    <label for="nomProjet">Nom complet</label>
+                    <input type="text" id="nomProjet" name="nomProjet" placeholder="Ex: Aissatou Ndiaye" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailProjet">Adresse e-mail</label>
+                    <input type="email" id="emailProjet" name="emailProjet" placeholder="Ex: client@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="typeProjet">Type de projet</label>
+                    <select id="typeProjet" name="typeProjet" required>
+                        <option value="">-- Sélectionnez un type --</option>
+                        <option value="site-vitrine">Site vitrine</option>
+                        <option value="e-commerce">Site e-commerce</option>
+                        <option value="application-web">Application web</option>
+                        <option value="refonte">Refonte de site</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="budgetProjet">Budget estimé</label>
+                    <select id="budgetProjet" name="budgetProjet" required>
+                        <option value="">-- Sélectionnez une fourchette --</option>
+                        <option value="moins-500k">Moins de 500 000 FCFA</option>
+                        <option value="500k-1m">500 000 - 1 000 000 FCFA</option>
+                        <option value="1m-3m">1 000 000 - 3 000 000 FCFA</option>
+                        <option value="plus-3m">Plus de 3 000 000 FCFA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descriptionProjet">Description du projet</label>
+                    <textarea id="descriptionProjet" name="descriptionProjet" rows="6" placeholder="Objectifs, fonctionnalités attendues, délais..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer la demande</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ndeye Madeleine Dia - Étudiante en L2 GLAR</p>
+        <p>Portfolio réalisé avec HTML et CSS</p>
+        <ul class="socials" aria-label="Liens professionnels">
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

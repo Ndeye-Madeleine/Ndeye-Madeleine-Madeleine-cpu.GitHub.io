@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rechercher dans les projets de Ndeye Madeleine Dia par technologie ou mot-clé.">
+    <meta name="author" content="Ndeye Madeleine Dia">
+    <title>Recherche | Portfolio Ndeye Madeleine Dia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header>
+        <nav class="navbar" aria-label="Navigation principale">
+            <a href="index.html" class="logo" aria-label="Retour à l'accueil - Madeleine.dev">Madeleine.dev</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="recherche.html" aria-current="page">Recherche</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="recherche" aria-labelledby="search-heading">
+            <h1 id="search-heading">Rechercher dans mes projets</h1>
+            <form role="search" class="form-recherche">
+                <label for="champ-recherche">Mot-clé :</label>
+                <input type="search" id="champ-recherche" name="q" placeholder="Ex: Arduino, HTML, Réseau" class="search" required>
+                <button type="submit" class="btn">Rechercher</button>
+            </form>
+            <div aria-live="polite" aria-atomic="true" class="resultats">
+                <h2>Résultats</h2>
+                <div id="zone-resultats">
+                    <p>Entrez un mot-clé pour lancer la recherche. La fonctionnalité PHP sera ajoutée ultérieurement.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ndeye Madeleine Dia - ESTM</p>
+        <p>Portfolio réalisé avec HTML et CSS</p>
+        <ul class="socials" aria-label="Liens professionnels">
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
